@@ -8,4 +8,8 @@ RUN apt-get update \
     && pip3 install git-filter-repo \
     && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /repo
+
+WORKDIR /repo
+
 CMD ["python3"]
