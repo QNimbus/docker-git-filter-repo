@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VERSION=latest
-IMAGE=qnimbus/docker-git-filter-repo
+IMAGE=vwn/docker-git-filter-repo
 
 # Build latest
 docker build -t ${IMAGE}:${VERSION} --compress --no-cache --platform linux/amd64 . || exit 1
